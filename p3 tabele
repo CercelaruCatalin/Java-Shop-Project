@@ -1,0 +1,61 @@
+ALTER TABLE users DROP COLUMN id;
+
+ALTER TABLE users
+  ADD COLUMN `id` int(100) NOT NULL;
+  
+ALTER TABLE users
+	MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  
+	
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+  
+ALTER TABLE users DROP COLUMN ID;
+
+ALTER TABLE `users`
+ ADD COLUMN  id int IDENTITY(1,1) PRIMARY KEY;
+ 
+  Personid int IDENTITY(1,1) PRIMARY KEY,
+  
+  
+  CREATE TABLE `users` (
+  `id` int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+  
+ ALTER TABLE `users`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  
+  Drop Table users;
+  
+  
+  Insert into `users` (`name`, `email`, `password`) Values
+  ('Cata', 'test02@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055');
+  
+  ALTER TABLE `users`
+ADD COLUMN NR_TEL varchar(10),
+ADD COLUMN address varchar(500)
+
+Alter table cart
+Drop column pid;
+
+
+select * from users;
+
+select * from cart;
+
+Delete from cart where user_id=4;
+
+select * from produse;
+
+  Insert into `orders` (`user_id`, `name`, `number`, `email`, method, `address`, `total_products`, `total_price`) Values
+  (5, 'asdasd', 123213123, 'test02@gmail.com', 'cash',  'uneva', 'asdasdasd', 200);
+  
+  ALTER TABLE `orders`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  
